@@ -1,0 +1,41 @@
+<%- include("partials/header.ejs") -%>
+
+    <body class="text-center">
+
+        <main class="form-signin">
+            <form action="/signin" method="POST">
+                <img class="mb-4" src="https://media.wired.com/photos/5c9040ee4950d24718d6da99/master/w_2560%2Cc_limit/shoppingcart-1066110386.jpg" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" name="username" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                <div class="error">
+                    <p>
+                        <%= messages.error %>
+                    </p>
+                </div>
+                <div class="switch">
+                    <a href="/signup">Don't have an account? Click Here</a>
+                </div>
+                <div>
+                    <p>-----OR-----</p>
+                    <a type="button" href="/auth/google/" class="w-100 btn btn-social btn-google btn-lg"><span class="fab fa-google"></span>Sign in with Google</a>
+                </div>
+                <p class="mt-5 mb-3 text-muted">&copy; 2021 Hemin Maru</p>
+            </form>
+        </main>
+
+        <%- include("partials/footer.ejs") -%>
