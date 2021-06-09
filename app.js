@@ -80,8 +80,4 @@ app.post('/signup', async(req, res) => {
     }
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-    port = 8000;
-}
-app.listen(port);
+app.listen(process.env.PORT || 3000)
