@@ -27,7 +27,7 @@ function initialize(passport) {
     passport.use(new GoogleStrategy({
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: "http://localhost:3000/auth/google/home/",
+            callbackURL: process.env.HOST + "/auth/google/home/",
             userProfileURL: "httls://www.google.com/oauth2/v3/userinfo",
             passReqToCallback: true
         },
