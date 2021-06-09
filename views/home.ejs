@@ -1,5 +1,32 @@
-<%- include("partials/footer.ejs") -%>
+<%- include("partials/header.ejs") -%>
+    <div class="opening_big">
+        <div class="opening">
+            <p>LOOK YOUR BEST</p>
+            <h1>FIND YOUR FASHION MATCH</h1>
+            <button href="#">SHOP NOW</button>
+        </div>
+    </div>
 
-    <body>
-        <h1>This is home page</h1>
-        <%- include("partials/footer.ejs") -%>
+    <div class="team-area">
+        <div class="single-team">
+            <img src="../assets/fashion(bestValue).png">
+            <p>Best Value</p>
+        </div>
+        <div class="single-team">
+            <img src="../assets/fashion(popular).png">
+            <p>Popular</p>
+        </div>
+        <div class="single-team">
+            <img src="../assets/fashion(newProducts).png">
+            <p>New Products</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <form class="keepInTouch">
+            <p>Keep In Touch</p>
+            <input type="email" placeholder=" Email Address">
+
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+    <%- include("partials/footer.ejs") -%>
