@@ -276,7 +276,7 @@ nav {
 
 .keepInTouch p {
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 .keepInTouch input {
@@ -289,7 +289,7 @@ nav {
 
 .keepInTouch button {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 10px;
     width: 130px;
     height: 52px;
     padding: 15px;
@@ -309,6 +309,7 @@ nav {
 }
 
 footer p {
+    font-size: small;
     margin: 0;
     color: #f5f5f5;
 }
@@ -321,7 +322,7 @@ footer ul {
     list-style: none;
     margin: auto;
     display: flex;
-    width: 200px;
+    width: 150px;
     justify-content: space-around;
     padding-bottom: 20px;
 }
@@ -363,5 +364,8 @@ footer p a {
     .searchBar {
         margin: 1.1vw;
         height: 3.5vw;
+    }
+    .keepInTouch button {
+        font-size: 15px;
     }
 }
