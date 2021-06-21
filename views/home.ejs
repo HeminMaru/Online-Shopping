@@ -1,4 +1,4 @@
-<%- include("partials/header.ejs") -%>
+<%- include("partials/header/header.ejs") -%>
     <div class="opening_big">
         <div class="opening">
             <p>LOOK YOUR BEST</p>
@@ -24,9 +24,11 @@
     <div class="text-center">
         <form class="keepInTouch">
             <p>Keep In Touch</p>
-            <input type="email" placeholder=" Email Address">
+            <div class="inputSubmit">
+                <input type="email" placeholder=" Email Address">
+                <button type="submit">SIGN UP</button>
+            </div>
 
-            <button type="submit">SIGN UP</button>
         </form>
     </div>
     <%- include("partials/footer.ejs") -%>
