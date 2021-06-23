@@ -1,0 +1,25 @@
+footer p {
+    font-size: 12px;
+    margin: 0;
+    color: #f5f5f5;
+}
+
+footer {
+    background-color: #bd6d5a;
+    margin: 0;
+    padding: 2vw;
+}
+
+footer ul {
+    list-style: none;
+    margin: auto;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-left: 0%;
+}
+
+footer p a {
+    color: #000;
+}

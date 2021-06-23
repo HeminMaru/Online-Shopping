@@ -1,0 +1,87 @@
+.mobile_device {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 11vw;
+}
+
+.desktop {
+    display: none;
+}
+
+.logo {
+    font-size: 35px;
+    margin: 0.4vw;
+    font-family: 'Tangerine', cursive;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.offcanvas {
+    width: 70%;
+}
+
+.offcanvas-header {
+    background-color: #bd6d5a;
+    font-family: 'Tangerine', cursive;
+    font-size: 7.5vw;
+    color: #f5f5f5;
+}
+
+.nav_links {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+.nav-li {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.nav_links li a {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    color: #bd6d5a;
+}
+
+.navSec3 a {
+    margin: auto;
+    padding: 0.5vw;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
+}
+
+.offcanvas li {
+    padding: 10px;
+}
+
+.button {
+    padding: 0%;
+}
+
+.searchBar {
+    margin: 1.7vw;
+    height: 6vw;
+}
+
+.cart {
+    color: #000;
+    margin: 1.5vw;
+}
+
+.cart:hover {
+    color: #bd6d5a;
+}

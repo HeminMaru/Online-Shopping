@@ -1,0 +1,84 @@
+.authBody {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+#floatingFirstName {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#floatingSecondName {
+    margin-bottom: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.signupButton {
+    margin-bottom: 10px;
+    background-color: #bd6d5a;
+    border-color: #bd6d5a;
+}
+
+.signupButton:hover {
+    margin-bottom: 10px;
+    background-color: #8b5344;
+    border-color: #8b5344;
+}
+
+.switch {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
+
+.google {
+    color: #f5f5f5;
+    background-color: #4081ec;
+    text-align: left;
+}
+
+.google-text {
+    margin-left: 15%;
+}
+
+.google:hover {
+    color: #f5f5f5;
+    background-color: #1d54ac;
+}

@@ -1,0 +1,38 @@
+.opening_big {
+    background-image: url(../assets/fashon\(1\).png);
+    background-size: cover;
+    height: 50vw;
+}
+
+.opening {
+    font-size: 2vw;
+    padding: 10vw 5vw;
+    width: 60%;
+}
+
+.opening p {
+    font-family: 'Laila', sans-serif;
+    background-color: black;
+    color: #f5f5f5;
+    width: fit-content;
+    padding: 10px;
+}
+
+.opening button {
+    background-color: #bd6d5a;
+    color: #f5f5f5;
+    padding: 1vw;
+    border-color: #bd6d5a;
+}
+
+.opening button:hover {
+    background-color: #8b5344;
+    color: #f5f5f5;
+    padding: 1vw;
+    border-color: #8b5344;
+}
+
+.opening h1 {
+    font-size: 5.2vw;
+    padding: 3vw;
+}
