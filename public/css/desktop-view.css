@@ -10,7 +10,7 @@
     }
     .nav_links li {
         display: inline-block;
-        padding: 0vw 1vw;
+        padding: 0.7vw;
         font-size: 1.3vw;
     }
     .searchBar {

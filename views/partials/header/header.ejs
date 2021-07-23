@@ -17,8 +17,9 @@
 
 
     <!--Google Fonts CDN-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Julius+Sans+One&family=Laila:wght@600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&family=Great+Vibes&family=Julius+Sans+One&family=Laila:wght@600&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 
     <!--UserDefined-->
     <link href="/css/index.css" rel="stylesheet">
@@ -29,11 +30,12 @@
     <link href="/css/keep-in-touch.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/desktop-view.css" rel="stylesheet">
+    <link href="/css/user.css" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <%- include("./mobile-nav.ejs") -%>
-            <%- include("./desktop-nav.ejs") -%>
+        <%- include("./mobile-nav.ejs",{userData: user}) -%>
+            <%- include("./desktop-nav.ejs", {userData: user}) -%>
     </header>

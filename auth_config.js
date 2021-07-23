@@ -33,6 +33,8 @@ function initialize(passport) {
         },
         function(request, accessToken, refreshToken, profile, done) {
             User.findOrCreate({
+                email: profile.email,
+                profileImage: profile.picture,
                 googleId: profile.id,
                 firstName: profile.name.givenName,
                 secondName: profile.name.familyName

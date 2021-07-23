@@ -1,0 +1,58 @@
+.sideBar {
+    width: 23%;
+    background-color: rgb(213, 216, 219);
+}
+
+.sideBar img {
+    width: 100%;
+}
+
+.mainBar {
+    width: 75%;
+    height: 590px;
+    overflow-x: auto;
+    margin: 10px;
+}
+
+.user-desk {
+    display: flex;
+}
+
+.profileMenu li {
+    list-style: none;
+}
+
+.profileMenu li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Encode Sans SC', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cards {
+    background-color: rgb(213, 216, 219);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 95%;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.cards div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards h1 {
+    color: #bd6d5a;
+}
+
+.userData {
+    margin: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.userData div {
+    margin: 20px 0px;
+}

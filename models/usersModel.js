@@ -6,7 +6,9 @@ mongoose.connect('mongodb+srv://developer-Hemin:' + process.env.DB_PASS + '@the-
 mongoose.set("useCreateIndex", true);
 
 const UserSchema = new mongoose.Schema({
+    profileImage: String,
     googleId: String,
+    email: String,
     firstName: {
         type: String,
         require: true

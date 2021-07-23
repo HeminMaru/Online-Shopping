@@ -50,9 +50,9 @@
     color: #bd6d5a;
 }
 
-.navSec3 a {
+.navSec3 button {
     margin: auto;
-    padding: 0.5vw;
+    padding: 1vw;
 }
 
 .navbar-toggler:focus {

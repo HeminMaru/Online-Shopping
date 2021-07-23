@@ -31,7 +31,7 @@ app.use(passport.session());
 app.get("/", function(req, res) {
     if (req.isAuthenticated()) {
         res.render("home.ejs", {
-            name: req.user.firstName + " " + req.user.secondName
+            userData: req.user
         });
     } else {
         res.redirect("/signin");
@@ -67,6 +67,7 @@ app.post('/signup', async(req, res) => {
     hashedPass = await bcrypt.hash(req.body.password, 10);
     try {
         const newUser = new User({
+            profileImage: "",
             username: req.body.username,
             firstName: req.body.firstName,
             secondName: req.body.secondName,
@@ -77,6 +78,18 @@ app.post('/signup', async(req, res) => {
         res.redirect('/signin');
     } catch {
         res.redirect("/")
+    }
+});
+
+app.get("/user/:userId", function(req, res) {
+    if (req.isAuthenticated()) {
+        if (JSON.stringify(req.user._id) === JSON.stringify(req.params.userId)) {
+            res.render("user.ejs", {
+                userData: req.user
+            });
+        }
+    } else {
+        res.redirect("/signin");
     }
 });
 
